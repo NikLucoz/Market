@@ -1,0 +1,27 @@
+body{
+  padding-top: 40px;
+}
+
+.product{
+  display: grid;
+  position: absolute;
+  transform: translate(-50%, 30%);
+  left: 50%;
+  align-items: center;
+  text-align: center;
+}
+
+.img{
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
+.btnCompra{
+  width: 200px;
+  transform: translate(10%,0);
+}
+
+.btnIndietro{
+  width: 200px;
+}

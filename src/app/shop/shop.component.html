@@ -1,0 +1,20 @@
+<body>
+  <div class="optionTab">
+    <h4 class="filterText" >Filtri: </h4>
+    <select class="selection" [(ngModel)]="selectedFilter" >
+      <option *ngFor="let filter of listOptions" (click)="populateItems()" [ngValue]="filter.categoria">{{filter.categoria}}</option>
+    </select>
+  </div>
+
+  <ul>
+    <li *ngFor="let obj of item">
+      <div class="article">
+        <p class="articleTitle">{{obj.name}}</p>
+        <img class="img" [src]="obj.imgUrl" alt="">
+        <p>Prezzo: {{obj.prezzo}}$</p>
+        <button (click)="buyItem(obj.id)" class="buyButton">Aggiungi al Carrello</button>
+        <button (click)="showProductInfo(obj)" class="btnVisualizza">Visualizza Prodotto</button>
+      </div>
+    </li>
+  </ul>
+</body>

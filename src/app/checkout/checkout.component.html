@@ -1,0 +1,21 @@
+<body>
+  <h3 *ngIf="getCostoFinale() === 0">Aggiungi qualcosa al carrello</h3>
+
+  <div *ngIf="getCostoFinale() != 0" class="wrapper">
+    <ul>
+      <li *ngFor="let obj of cartItems">
+        <div class="article">
+        <p class="articleTitle"><button class="button" (click)="removeItemFromCart(obj)">Rimuovi</button> {{obj.name}} | Prezzo: {{obj.prezzo}}$ </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="infoPayment" *ngIf="getCostoFinale() != 0">
+    <h3 class="totalePrezzo">Totale: {{costoFinale}}$</h3>
+    <button class="btnPaga" (click)="payItems()">Paga</button>
+    <p>Inserisci codice promozionale</p>
+    <input class="input" #inputBox>
+    <button class="button" (click)="addPromoCode(inputBox.value)">Applica</button>
+  </div>
+</body>

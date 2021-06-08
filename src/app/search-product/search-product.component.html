@@ -1,0 +1,11 @@
+<body>
+  <div class="searchBox">
+    <h2 class="text">Inserisci nome prodotto o categoria</h2>
+    <input class="inputBox" #inputBox (keyup)="populateItem(inputBox.value)">
+
+    <ul class="prodList" *ngIf="inputBox.value != '' ">
+      <li *ngFor="let obj of items">
+        <a (click)="showItemInformation(obj)" class="searchResult">Nome: '{{obj.name}}' Prezzo: {{obj.prezzo}}$ Categoria: '{{obj.categoria}}'</a><br>
+    </ul>
+  </div>
+</body>

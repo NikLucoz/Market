@@ -1,0 +1,80 @@
+body{
+  padding-top: 50px;
+}
+
+ul {
+  list-style-type: none
+}
+
+.infoPayment{
+  float: right;
+}
+
+.btnPaga{
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.btnPaga:hover{
+  background-color: #555;
+}
+
+.btnPaga:active{
+  background-color: #333;
+}
+
+.totalePrezzo
+{
+  bottom: 10px;
+  color: white;
+  background-color: #04AA6D;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.button{
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover{
+  background-color: #555;
+}
+
+.button:active{
+  background-color: #333;
+}
+
+.wrapper{
+  float: left;
+  border-radius: 30px;
+  height: 80%;
+  width: 800px;
+  background-color: #fff;
+  box-shadow: 0 0 128px rgba(0, 0, 0, 0.1),
+              0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.articleTitle{
+  margin: 4px 2px;
+}
+
+

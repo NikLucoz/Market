@@ -1,0 +1,40 @@
+body{
+  position: relative;
+}
+
+.searchBox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 400px;
+  width: 800px;
+  list-style-type: none;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 0 128px rgba(0, 0, 0, 0.1),
+              0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+.text{
+  transform: translate(30%, 10%);
+}
+
+.inputBox{
+  transform: translate(47%, 100%);
+
+  width: 400px;
+}
+
+.prodList{
+  transform: translate(0%, 20%);
+  list-style: none;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 56%;
+  width: 94%;
+}
+
+.searchResult{
+  font-size: 18;
+}

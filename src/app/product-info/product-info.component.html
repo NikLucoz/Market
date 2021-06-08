@@ -1,0 +1,15 @@
+<body>
+
+  <button class="btnIndietro" (click)="returnToShop()">Ritorna al negozio</button>
+
+  <div class="product" *ngIf="selectedProduct.id != 0">
+    <h2>{{selectedProduct.name}}</h2>
+
+    <h3>Prezzo: {{selectedProduct.prezzo}}$</h3>
+
+    <h3>Categoria: {{selectedProduct.categoria}}</h3>
+
+    <button class="btnCompra" (click)="buyItem()">Aggiungi al carrello</button>
+    <img class="img" src="{{selectedProduct.imgUrl}}" alt="">
+  </div>
+</body>
