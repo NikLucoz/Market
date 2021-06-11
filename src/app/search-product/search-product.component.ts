@@ -22,7 +22,7 @@ export class SearchProductComponent implements OnInit {
   }
 
   populateItem(filterValue: string){
-    console.log(this.items);
+    //console.log(this.items);
     this.items = [];
 
     for (let index = 0; index < ITEMS.length; index++) {

@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'checkout', component: CheckoutComponent },
   { path: 'visualizzaProdotto', component: ProductInfoComponent },
   { path: 'cercaProdotto', component: SearchProductComponent },
-  { path: 'contatti', component: ContattiComponent }
+  { path: 'contatti', component: ContattiComponent },
 
 ];
 

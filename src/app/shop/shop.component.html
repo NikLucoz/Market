@@ -1,20 +1,41 @@
 <body>
-  <div class="optionTab">
-    <h4 class="filterText" >Filtri: </h4>
-    <select class="selection" [(ngModel)]="selectedFilter" >
-      <option *ngFor="let filter of listOptions" (click)="populateItems()" [ngValue]="filter.categoria">{{filter.categoria}}</option>
-    </select>
-  </div>
 
-  <ul>
-    <li *ngFor="let obj of item">
-      <div class="article">
-        <p class="articleTitle">{{obj.name}}</p>
-        <img class="img" [src]="obj.imgUrl" alt="">
-        <p>Prezzo: {{obj.prezzo}}$</p>
-        <button (click)="buyItem(obj.id)" class="buyButton">Aggiungi al Carrello</button>
-        <button (click)="showProductInfo(obj)" class="btnVisualizza">Visualizza Prodotto</button>
+  <nav class="product-filter">
+    <div class="sort">
+      <div class="collection-sort">
+        <label class="filter-label">Filtri:  </label>
+        <select class="selection" [(ngModel)]="selectedFilter" >
+          <option *ngFor="let filter of listOptions" (click)="populateItems()" [ngValue]="filter.categoria">{{filter.categoria}}</option>
+        </select>
       </div>
-    </li>
-  </ul>
+    </div>
+
+  </nav>
+
+
+  <section class="products">
+
+    <div class="product-card" *ngFor="let obj of item">
+      <div class="product-image">
+        <img [src]="obj.imgUrl">
+      </div>
+
+      <div class="product-info">
+        <h5>{{obj.name}}</h5>
+        <mat-icon style="margin:12%">star_rate star_rate star_rate star_rate star_rate</mat-icon>
+        <h6>{{obj.prezzo}}$</h6>
+      </div>
+
+      <div class="product-buttons">
+        <button mat-fab color="basic"  (click)="buyItem(obj.id)">
+          <mat-icon>add_shopping_cart</mat-icon>
+        </button>
+
+        <button mat-fab color="basic" (click)="showProductInfo(obj)">
+          <mat-icon>remove_red_eye</mat-icon>
+        </button>
+      </div>
+    </div>
+
+  </section>
 </body>

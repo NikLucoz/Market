@@ -13,6 +13,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+import { NgxStripeModule } from 'ngx-stripe';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,9 @@ import {MatIconModule} from '@angular/material/icon';
     MatSnackBarModule,
     MatSidenavModule,
     MatIconModule,
+    MatButtonModule,
+    MatSelectModule,
+    NgxStripeModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

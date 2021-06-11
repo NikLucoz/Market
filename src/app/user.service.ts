@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { StripePaymentService } from './stripe-payment.service';
 import { LocalStorageService } from './local-storage.service';
 import { Injectable } from '@angular/core';
 import { Items } from './item';
@@ -13,7 +15,7 @@ export class UserService {
   userCart: Items[] = [];
   prezzoFinale: number = 0;
 
-  constructor(public service: LocalStorageService) { }
+  constructor(public service: LocalStorageService, private paymentService: StripePaymentService) { }
 
   addToCart(item: Items){
     this.userCart.push(item);
@@ -65,7 +67,9 @@ export class UserService {
   }
 
   payItemsInCart(){
-    this.prezzoFinale = 0;
+    this.paymentService.loadstripe();
+    this.paymentService.pay(this.calculateFinalPrice());
+    //this.paymentService.checkout(this.getCartItems());
     this.userCart = [];
     this.service.removeFromStorage("Carrello")
   }

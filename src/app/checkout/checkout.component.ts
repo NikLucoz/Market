@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ShopService } from './../shop.service';
 import { UserService } from './../user.service';
 import { Component, OnInit } from '@angular/core';
@@ -14,15 +15,15 @@ export class CheckoutComponent implements OnInit {
   cartItems: Items[] = [];
   costoFinale: number = 0;
 
-  constructor(private snackBar: MatSnackBar, public service: UserService, public service2: ShopService) { }
+  constructor(private snackBar: MatSnackBar, public userService: UserService, public shopService: ShopService) { }
 
   ngOnInit(): void {
-    this.cartItems = this.service.getCartItems();
+    this.cartItems = this.userService.getCartItems();
   }
 
   getCostoFinale(): number{
 
-    let value: number  = Math.round(this.service.calculateFinalPrice() * 100) / 100;
+    let value: number  = Math.round(this.userService.calculateFinalPrice() * 100) / 100;
 
     if(value < 0){
       this.costoFinale = 0;
@@ -30,22 +31,21 @@ export class CheckoutComponent implements OnInit {
       this.costoFinale = value;
     }
 
-    return Math.round(this.service.calculateFinalPrice() * 100) / 100;
+    return Math.round(this.userService.calculateFinalPrice() * 100) / 100;
   }
 
   removeItemFromCart(item: Items){
     this.snackBar.open("Prodotto rimosso dal carrello", "chiudi");
-    this.service.removeFromCart(item);
+    this.userService.removeFromCart(item);
   }
 
   payItems(){
-    this.snackBar.open("Prodotti acquistati", "chiudi");
-    this.service.payItemsInCart();
+    this.userService.payItemsInCart();
   }
 
   addPromoCode(code: string){
     if(code != ""){
-    this.service2.applyCode(code);
+    this.shopService.applyCode(code);
     }
   }
 

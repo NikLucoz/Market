@@ -1,6 +1,26 @@
 <body>
 
-  <button class="btnIndietro" (click)="returnToShop()">Ritorna al negozio</button>
+  <div class="item">
+    <div class="container">
+      <img class="img" src="{{selectedProduct.imgUrl}}" alt="">
+    </div>
+    <div class="productInfo">
+      <div class="title">
+      <h2>{{selectedProduct.name}}</h2>
+      <h2>Prezzo: {{selectedProduct.prezzo}}$</h2>
+      <mat-icon>star_rate star_rate star_rate star_rate star_rate</mat-icon>
+
+      <button class="btnBuy" mat-fab color="basic"  (click)="buyItem()">
+        <mat-icon>add_shopping_cart</mat-icon>
+      </button>
+    </div>
+    </div>
+  </div>
+
+<!--
+  <button mat-fab color="basic" style="margin-top: 20px;" (click)="returnToShop()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
 
   <div class="product" *ngIf="selectedProduct.id != 0">
     <h2>{{selectedProduct.name}}</h2>
@@ -8,8 +28,10 @@
     <h3>Prezzo: {{selectedProduct.prezzo}}$</h3>
 
     <h3>Categoria: {{selectedProduct.categoria}}</h3>
-
-    <button class="btnCompra" (click)="buyItem()">Aggiungi al carrello</button>
     <img class="img" src="{{selectedProduct.imgUrl}}" alt="">
+    <button style="transform: translate(220%,30%);" mat-fab color="basic" (click)="buyItem()">
+      <mat-icon>add_shopping_cart</mat-icon>
+    </button>
   </div>
-</body>
+-->
+
