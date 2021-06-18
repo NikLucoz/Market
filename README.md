@@ -1,5 +1,6 @@
 # Market
 Sito di E-Commerce creato durante il periodo di PCTO presso l'azienda DevQ.
+
 Sviluppato in Angular.
 
 (Per essere avviato bisogna utilizzare Node.js)
