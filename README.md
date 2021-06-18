@@ -11,7 +11,7 @@ Sviluppato in Angular.
 5. Digitare "ng serve --open"
 
 In caso di errore riguardante librerie mancanti basterà entrare nella cartella del progetto e digitare nel terminale "npm install".
-Questo comandi installerà in locale le librerie necessarie al funzionamento del programma. 
+Questo comando installerà in locale le librerie necessarie al funzionamento del programma. 
 
 
 
