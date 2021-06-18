@@ -15,7 +15,7 @@ In caso di errore riguardante librerie mancanti basterà entrare nella cartella 
 
 
 
-#Note
+## Note
 
 Pre questioni di sicurezza le chiavi di sicurezza dedicate al pagamento sono state rimosse.
 Non sarà quindi possibile effettuare il pagamento.
