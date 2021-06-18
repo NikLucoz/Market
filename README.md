@@ -15,6 +15,12 @@ In caso di errore riguardante librerie mancanti basterà entrare nella cartella 
 
 
 
+#Note
+
+Pre questioni di sicurezza le chiavi di sicurezza dedicate al pagamento sono state rimosse.
+Non sarà quindi possibile effettuare il pagamento.
+Provando ad eseguirlo verrà mostrato un errore nella console.
+
 
 ## Development server
 
