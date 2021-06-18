@@ -15,7 +15,7 @@ export class StripePaymentService {
 
   pay(amount: any) {
     var handler = (<any>window).StripeCheckout.configure({
-      key: 'pk_test_51IzkbvFrukONLkLFvWpZvmEbevEu39aGxLDbOqCeBuzWbj4xJTKG0SwfrddijnCVQkWd9xneGFRPRETL5aD8C2zv00wxdbhROv',
+      key: 'inserire chiave Stripe',
       locale: 'auto',
       token: function (token: any) {
         console.log(token);
@@ -39,7 +39,7 @@ export class StripePaymentService {
       s.src = 'https://checkout.stripe.com/checkout.js';
       s.onload = () => {
         this.handler = (<any>Window).StripeCheckout.configure({
-          key: 'pk_test_51IzkbvFrukONLkLFvWpZvmEbevEu39aGxLDbOqCeBuzWbj4xJTKG0SwfrddijnCVQkWd9xneGFRPRETL5aD8C2zv00wxdbhROv',
+          key: 'inserire chaive Stripe',
           locale: "auto",
           token: function (token: any){
             console.log(token);
@@ -50,7 +50,7 @@ export class StripePaymentService {
     }
   }
 
-  // stripePromise = loadStripe('pk_test_51IzkbvFrukONLkLFvWpZvmEbevEu39aGxLDbOqCeBuzWbj4xJTKG0SwfrddijnCVQkWd9xneGFRPRETL5aD8C2zv00wxdbhROv');
+  // stripePromise = loadStripe('inserire chiave Stripe');
 
   // async checkout(cart: Items[]) {
   //   //const stripe = await this.stripePromise;
