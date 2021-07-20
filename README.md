@@ -11,7 +11,8 @@ Sviluppato in Angular.
 ## Note
 Per questioni di sicurezza le chiavi private dedicate al pagamento sono state rimosse.
 
-## [ENG] Market
+
+# [ENG] Market
 E-Commerce site developed during a stage at DevQ srl.
 
 Developed in Angular.
