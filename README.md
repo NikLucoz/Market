@@ -1,4 +1,4 @@
-# Market
+# [ITA] Market
 Sito di E-Commerce creato durante il periodo di PCTO presso l'azienda DevQ.
 
 Sviluppato in Angular.
@@ -6,21 +6,23 @@ Sviluppato in Angular.
 ## Testare il progetto
 1. Assicurarsi di aver installato nel dispositivo Node.js
 2. Scaricare la repository
-3. Entrare nella cartella del progetto
-4. Aprire il terminale
-5. Digitare "ng serve --open"
-
-In caso di errore riguardante librerie mancanti basterà entrare nella cartella del progetto e digitare nel terminale "npm install".
-Questo comando installerà in locale le librerie necessarie al funzionamento del programma. 
-
-
+5. Avviare il rpogetto con "ng serve --open"
 
 ## Note
+Per questioni di sicurezza le chiavi private dedicate al pagamento sono state rimosse.
 
-Pre questioni di sicurezza le chiavi private dedicate al pagamento sono state rimosse.
-Non sarà quindi possibile effettuare il pagamento.
-Provando ad eseguirlo verrà mostrato un errore nella console.
+## [ENG] Market
+E-Commerce site developed during a stage at DevQ srl.
 
+Developed in Angular.
+
+## Test the project
+1. Install Node.js on your machine
+2. Download this repository
+5. start the site with "ng serve --open"
+
+## Notes
+For security reasons, the private keys used for payment have been removed.
 
 ## Development server
 
