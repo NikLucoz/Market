@@ -1,3 +1,17 @@
+# [ENG] Market
+E-Commerce site developed during a stage at DevQ srl.
+
+Developed in Angular.
+
+## Test the project
+1. Install Node.js on your machine
+2. Download this repository
+5. start the site with "ng serve --open"
+
+## Notes
+For security reasons, the private keys used for payment have been removed.
+
+
 # [ITA] Market
 Sito di E-Commerce creato durante il periodo di PCTO presso l'azienda DevQ.
 
@@ -11,19 +25,6 @@ Sviluppato in Angular.
 ## Note
 Per questioni di sicurezza le chiavi private dedicate al pagamento sono state rimosse.
 
-
-# [ENG] Market
-E-Commerce site developed during a stage at DevQ srl.
-
-Developed in Angular.
-
-## Test the project
-1. Install Node.js on your machine
-2. Download this repository
-5. start the site with "ng serve --open"
-
-## Notes
-For security reasons, the private keys used for payment have been removed.
 
 ## Development server
 
