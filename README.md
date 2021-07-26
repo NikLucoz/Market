@@ -18,7 +18,7 @@ Sito di E-Commerce creato durante il periodo di PCTO presso l'azienda DevQ.
 Sviluppato in Angular.
 
 ## Testare il progetto
-1. Assicurarsi di aver installato nel dispositivo Node.js
+1. Assicurarsi di avere Node.js
 2. Scaricare la repository
 5. Avviare il rpogetto con "ng serve --open"
 
